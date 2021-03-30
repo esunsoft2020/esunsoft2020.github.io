@@ -1,0 +1,448 @@
+*{padding: 0; margin: 0;
+/* border: 1px dotted red; */
+}
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+p{padding: 0; margin: 0;}
+ul{list-style: none; margin: 0; padding: 0;}
+li{margin: 0; padding: 0;}
+
+.more{color: rgb(201, 198, 198); font-size: 12px;}
+.title h3{font-size: 14px;}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+}
+header img{width: 100%;}
+
+header div a div{ 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header div a div.right{
+    top: 50%;
+    right: 5%;
+}
+header div a div.left{
+    top: 50%;
+    left: 5%;
+}
+
+header div a p{margin: 0px 20px; font-weight: bold;}
+
+header a{ color: white; position: relative;}
+header a:hover{ color: white;}
+header div a div img{width: 30px; height:40px;}
+
+
+/* 상단 고정 */
+
+
+/* 하단 고정 */
+#top_drop{
+    display: inline-block;
+    position: fixed;
+
+    bottom: 1%;
+    right: 10px;
+    width: 50px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+}
+
+/* 팝업 작업 */
+/* aside */
+aside#pop{
+    padding: 10px; margin: 0;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 300px;
+    height: 350px;
+    border-radius: 0px 10px ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 3;
+}
+aside#pop div#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #c8aa9a;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+}
+aside#pop img{
+    width: 15px;
+    margin: 8px;
+}
+
+aside#pop p{
+    margin-left: 25%; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+aside#pop iframe{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 10px;
+    opacity: 1;
+    position: relative;
+}
+
+aside#pop a{
+    background-color: #c8aa9a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ----------article----------- */
+article{margin-top: 50px; background-color: #F8F8F8}
+
+/* section */
+section{padding: 30px 0px; font-size: 12px;}
+
+/* section : dragImage */
+section.dragImage{
+    background-color: #c8aa9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+section.dragImage h3{font-size: 15px;}
+section.dragImage a{ margin-bottom: 20px;}
+/* section.dragImage div img.w-100{height: 400px; object-fit: cover; margin-bottom: 20px;} */
+
+
+/* section : ABOUT PLASTA */
+section.about{ margin: 30px 0px 0px 0px; color: #c8aa9a; position: relative;}
+#aboutTitle{display: flex; align-items: center;}
+section div.line{ width: 80px; height: 1px; background-color: #c8aa9a;}
+section div#aboutTitle h3{font-size: 11px; margin-left: 10px;}
+section.about div.content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#aboutImage{
+    margin-top: 70px;
+    width: 90%;
+    margin-left: 5%;
+}
+section.about div.str{
+    background-color: #1d293f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+section.about div.str div{ display: flex;}
+section.about div.str div div.line{margin: 20px 10px 0px 0px; height: 2px;}
+
+
+/* section : BEST ITEMS */
+/* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
+section.best{ margin-top: 0px; position: relative; height: 90vw;}
+section.best h3{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 14px;
+}
+section.best .card{
+    height: 55vw; padding: 0;
+    cursor: pointer;
+    width: 40vw;
+}
+section.best .card img{width: 100%; margin-top: 18vw;}
+section.best .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+    height: 10vw;
+}
+
+section.best .wrap {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+section.best .box_wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section.best .box{ 
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+}
+
+section.best .box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.best div.content {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-right: 3vw;
+}
+section.best .prev {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    -webkit-transform: translate(32px, -50%);
+    -ms-transform: translate(32px, -50%);
+    -o-transform: translate(32px, -50%);
+    transform: translate(32px, -50%);
+}
+  
+section.best .next {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    -webkit-transform: translate(-16px, -50%);
+    -ms-transform: translate(-16px, -50%);
+    -o-transform: translate(-16px, -50%);
+    transform: translate(-16px, -50%);
+}
+
+
+/* section : BrandStory */
+section.brand{
+    margin: 0; padding: 0;
+    overflow: hidden; 
+    position: relative; 
+    color: #c8aa9a;
+}
+section.brand img{
+    width: 300%;
+    height: 250px;
+    margin-left: -100%;
+}
+
+section.brand div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.boand p{font-size: 1vw;}
+section.brand a{
+    border: 1px solid #c8aa9a; 
+    color: #c8aa9a;
+    font-size: 1vw;
+    padding: 1px 40px;
+}
+
+
+
+/* section : PLASTIC ITEM */
+section.plastic{padding: 0px;}
+section.plastic div.person{
+    overflow: hidden;
+    height: 200px;
+}
+section.plastic .person img{
+    width: 100%;
+    height: auto;
+    margin-top: -30%;
+}
+section.plastic div.title{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+section.plastic .item{
+    width: 100%;
+    text-align: center;
+}
+
+section.plastic .item .card{
+    width: 150px;
+    height: 200px;
+}
+section.plastic .item .card img{
+    margin-top: 70px; width: 100%;
+}
+section.plastic .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.plastic .item .info a{width: auto;}
+
+section.plastic .item li{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* section : metal */
+section.metal{ display: flex; flex-direction: column-reverse; position: relative;}
+section.metal div.person{
+    overflow: hidden;
+    height: 250px;
+}
+section.metal .person img{
+    width: 100%;
+    height: auto;
+    margin-top: -38%;
+}
+section.metal div.title{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    text-align: center;
+}
+
+section.metal .item{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+section.metal .item .card{
+    width: 150px;
+    height: 200px;
+}
+section.metal .item .card img{
+    margin-top: 70px; width: 100%;
+}
+section.metal .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.plastic .item .info a{width: auto;}
+section.metal .item ul{
+    margin-top: 80px;
+}
+section.metal .item li{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* section : bottom */
+section.bottom{
+    position: static;clear: both;margin-top: 5vw; padding-bottom: 0;}
+section.bottom #b1, #b2{width: 100%;}
+
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    margin: 0;
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+
+
+
+
