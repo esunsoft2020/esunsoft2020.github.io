@@ -19,12 +19,19 @@ function checkAll(selectAll)  {
   }
 function success(){
     const checkboxes = document.getElementsByName('chk');
+<<<<<<< HEAD
     // alert ('test');
+=======
+    alert (test);
+>>>>>>> b3a2d8c0e353674966d625c2e11d2d8e8897b4cc
     // if (){
     //     alert('true');
     //     }else{
     //       alert('false');
     //     } 
+<<<<<<< HEAD
 
     open("./Sign_Up2.html");
+=======
+>>>>>>> b3a2d8c0e353674966d625c2e11d2d8e8897b4cc
 }
